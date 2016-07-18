@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-const Step1 = ({}) => {
+const Step1 = () => {
     return (<div>
         Step 1
     </div>);
