@@ -14,7 +14,9 @@ export class WizardPage extends React.Component {
         if (this.props.step) {
             switch (this.props.step) {
                 case '1':
-                    return <Step1 />;
+                    return <StepWrapperForm>
+                        <Step1 />
+                        </StepWrapperForm>;
                 case '2':
                     return <Step1 />;
                 case '3':

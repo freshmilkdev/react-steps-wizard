@@ -10,7 +10,10 @@ import {loadSteps} from './actions/stepsActions';
 import './styles/styles.css'; //Webpack can import CSS files too!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/toastr/build/toastr.min.css';
-
+//To use hashes without junk use appHistory in <Router history={appHistory}.../>
+/*import {useRouterHistory } from 'react-router';
+import { createHashHistory } from 'history';
+const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });*/
 const store = configureStore();
 store.dispatch(loadSteps());
 render(
